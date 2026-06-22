@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+          body
+          {
+            font-family:Arial, sans-serif;
+            padding:10px;
+            margin:0;
+            background:linear-gradient(to right,#bf72c1, #bf3d6a);
+
+
+          }
+          .container
+          {
+            width:100%;
+            border:2px solid #000;
+
+          }
+          .header
+          {
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            padding:15px;
+            border-bottom:2px solid #000;
+          }
+          .logo
+          {
+            width:100px;
+            height:80px;
+            background-color:#ddd;
+            text-align: center;
+            line-height: 40px;
+            
+
+          }
+          .menu
+          {
+            width:100%;
+            height:auto;
+            background-color:#ddd;
+            text-align: center;
+            line-height: 20px;
+          }
+          .menu li
+          {
+            display:inline-block;
+            margin-left: 20px;
+          }
+          .menu a{
+            text-decoration: none;
+            color:#aa2222;
+            font-weight: bold;
+            font-size:20px;
+          }
+          .menu a:hover
+          {
+            color:orange;
+          }
+          .banner
+          {
+            height:350px;
+            border-bottom:2px solid #000;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:24px;
+            border-bottom: 2px solid #000;
+          }
+          .banner img
+          {
+            width:100%;
+          }
+          .content
+          {
+            display:flex;
+            padding:20px;
+            gap:20px;
+            border-bottom:2px solid #000;
+
+          }
+          .left
+          {
+            width:30%;
+            background-color:#fff8f0;
+          }
+          .small-box
+          {
+            height:150px;
+            border:2px solid #000;
+            margin-bottom: 20px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .small-box img
+          {
+            width:100%;
+            margin-top:20px;
+          }
+          .small-box img
+          {
+            width:100%;
+            margin-top:20px;
+          }
+          .right
+          {
+            width:70%;
+            border:2px solid #000;
+            min-height:260px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            flex-direction: column;
+            padding: 20px;
+            
+          }
+          .buy-btn
+          {
+            background-color:whitesmoke;
+            color:black;
+            padding:12px 25px;
+            border:none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor:pointer;
+            margin-top:20px;
+
+          }
+         
+
+          .footer-boxes
+          {
+            display: flex;
+            justify-content: space-around;
+            padding:20px;
+            border-bottom: 2px solid #000;
+          }
+          .footer-box
+          {
+            width:22%;
+            height:120px;
+            border:2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+          }
+          .footer-box
+          {
+            width:100%;
+          }
+          .copyright
+          {
+            text-align: center;
+            padding:15px;
+            background-color: rgb(122, 159, 173);
+          }
+          @media(max-width:768px)
+          {
+            .content
+            {
+                flex-direction: column;
+
+            }
+            .left,.right
+            {
+                width:100%;
+            }
+            .footer-boxes
+            {
+                flex-wrap: wrap;
+                gap:15px;
+            }
+            .footer-box
+            {
+                width:48%;
+            }
+          }
+
+          @media(max-width:480px)
+          {
+            .header
+            {
+                flex-direction: column;
+                gap:15px;
+
+            }
+            .menu
+            {
+                width:100%;
+
+            }
+            .footer-box
+            {
+                width:100%;
+            }
+            .banner
+            {
+                height:120px;
+                font-size:10px;
+            }
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+            <div class="logo"><img src="home_logo.jpg" class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="cotact.html">contact</a></li>
+                  </ul>
+              
+            </div>
+        </div>
+
+        <div class="banner"><img src="home_banner.jpg" class="banner"></div>
+        <div class="content">
+           <div class="left">
+            <div class="small-box"><img src="box1.jpg" class="small-box"></div>
+            <div class="small-box"><img src="box2.jpg" class="small-box"></div>
+           </div>
+           <div class="right">
+              <h1><b>👗_Welcome To Fashion World</b></h1>
+               "Our shop offers a wide range of stylish and quality clothing for men, women, and children. We provide the latest designs, comfortable fabrics, and affordable prices to meet every customer's needs."
+              
+                 <button class="buy-btn">Buy Now</button>
+              
+           </div>
+        </div>
+
+        <div class="footer-boxes">
+            <div class="footer-box"><img src="men's.jpg" class="footer-box"></div>
+            <div class="footer-box"><img src="women.webp" class="footer-box"></div>
+            <div class="footer-box"><img src="kids.jpg" class="footer-box"></div>
+            <div class="footer-box"><img src="offer.jpg" class="footer-box"></div>
+        </div>
+
+        <div class="copyright">
+         <b> @ 2026 Fashion World</b>
+        </div>
+      
+    
+    
+    
+    
+    
+    </div>
+      
+    </body>
+</html>
