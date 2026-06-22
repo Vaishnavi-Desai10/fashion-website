@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+          body
+          {
+            font-family:Arial, sans-serif;
+            padding:10px;
+            background:linear-gradient(to right,#b576a3, #c02779);
+
+
+
+          }
+          .container
+          {
+            width:100%;
+            border:2px solid #000;
+
+          }
+          .header
+          {
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            padding:15px;
+            border-bottom:2px solid #000;
+          }
+          .logo
+          {
+            width:120px;
+            height:80px;
+            background-color:#ddd;
+            text-align: center;
+            line-height: 40px;
+            margin-left: 10px;
+          }
+          .logo img
+          {
+            width:100%;
+            height:100%;
+            object-fit: contain;
+          }
+          .menu
+          {
+            width:600px;
+            height:40px;
+            background-color:#ddd;
+            text-align: center;
+            line-height: 20px;
+          }
+          .menu li
+          {
+            display:inline-block;
+            margin-left: 20px;
+          }
+          .menu a{
+            text-decoration: none;
+            color:#aa2222;
+            font-weight: bold;
+            font-size:20px;
+            padding:8px 12px;
+            border-radius: 5px;
+          }
+          .menu ul
+          {
+            list-style: none;
+            padding:0;
+            margin:0;
+          }
+          .menu a:hover
+          {
+            color:orange;
+          }
+          .banner
+          {
+            height:350px;
+            border-bottom:2px solid #000;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:24px;
+            border-bottom: 2px solid #000;
+          }
+          .banner img
+          {
+            width:100%;
+          }
+          .content
+          {
+            display:flex;
+            padding:20px;
+            gap:20px;
+            border-bottom:2px solid #000;
+
+          }
+          .left
+          {
+            width:30%;
+
+             background:linear-gradient(to right,#b668ba, #993998);
+          }
+          .small-box
+          {
+            height:120px;
+            border:2px solid #000;
+            margin-bottom: 20px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .small-box img
+          {
+            width:100%;
+            margin-top:20px;
+          }
+          .small-box img
+          {
+            width:100%;
+            margin-top:20px;
+          }
+          
+          .right
+          {
+            width:70%;
+            border:2px solid #000;
+            min-height:260px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+           background:linear-gradient(to right,#b68080, #ab702c);
+            flex-direction: column;
+          }
+          .box img
+          {
+              width:400px;
+              height:250px;
+              margin-top:50px;
+              align-items: left;
+          }
+          .box img
+          {
+            width:200px;
+            height:100px;
+            margin-top:50px;
+            margin-left: auto;
+            display: block;
+            text-align: right;
+           
+          }
+
+          .footer-boxes
+          {
+            display: flex;
+            justify-content: space-around;
+            padding:20px;
+            border-bottom: 2px solid #000;
+          }
+          .footer-box 
+          {
+            width:100%;
+            height:120px;
+            border:2px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(147, 99, 153);
+            font-weight: bold;
+          }
+          
+          
+          .copyright
+          {
+            text-align: center;
+            padding:15px;
+          }
+          @media(max-width:768px)
+          {
+            .content
+            {
+                flex-direction: column;
+
+            }
+            .left,.right
+            {
+                width:100%;
+            }
+            .footer-boxes
+            {
+                flex-wrap: wrap;
+                gap:15px;
+            }
+            .footer-box
+            {
+                width:48%;
+            }
+          }
+
+          @media(max-width:480px)
+          {
+            .header
+            {
+                flex-direction: column;
+                gap:15px;
+
+            }
+            .menu
+            {
+                width:100%;
+
+            }
+            .footer-box
+            {
+                width:100%;
+            }
+            .banner
+            {
+                height:120px;
+                font-size:10px;
+            }
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+            <div class="logo"><img src="p_logo.jpg" class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="contact.html">contact</a></li
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner"><img src="banner.jpg" class="banner"></div>
+
+        <div class="content">
+           <div class="left">
+            <div class="small-box"><img src="p1.jpg" class="small-box"></div>
+            <div class="small-box"><img src="p_banner.jpg" class="small-box"></div>
+           </div>
+           <div class="right">
+            <div class="offer"></div>
+             <h1><b>All Size Available</b></h1>
+             <div class="box"><img src="p_box4.png" class="box"></div>
+             <div class="box"><img src="off.png" class="box"></div>
+           </div>
+        </div>
+
+        <div class="footer-boxes">
+            <div class="footer-box"><img src="p_box1.jpg" class="footer-box"><h2>Price:₹999</h2></div>
+            <div class="footer-box"><img src="p_box2.jpg" class="footer-box"><h3>price:₹1999</h3></div>
+            <div class="footer-box"><img src="p_box3.jpg" class="footer-box"><h3>price:₹499</h3></div>
+            <div class="footer-box"><img src="p_box5.jpg" class="footer-box"><h4>price:₹1299</h4></div>
+        </div>
+
+        <div class="copyright">
+            @ 2026 Fashion World
+        </div>
+      
+    
+    
+    
+    
+    
+    </div>
+      
+    </body>
+</html>
